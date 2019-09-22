@@ -1,0 +1,7 @@
+Formulierungsregeln:
+
+1) So wenig Nebensätze und Verschachtelung wie möglich. Meistens ist es sehr leicht einen Nebensatz mit etwas Anpassung in einen Hauptsatz umzuwandeln. (hilft auch gegen komma fehler :D)
+2) Jeder Satz klingt gleich deutlich besser, wenn weniger oder keine Hilfsverben verwendet werden (machen, haben, tun etc). Lieber Verben verwenden die einen Vorgang beschreiben.
+3) Formulierungen aus der "man" Perspektive vermeiden, dann lieber neutral im Passiv schreiben. z.B: Man muss eine Lösung finden. => Eine Lösung muss gefunden werden.
+4) Konsistenz - Auf einen einheitlichen und konsistenten Auftritt achten (gleiche Formatierung der Quellen, Abbildungen etc)
+5) das: wenn das durch dieses oder welches im Satz ersetzt werden kann <=> dass: sonst immer mit zwei "ss"
