@@ -6,7 +6,7 @@ var app              = './app';
 var build            = './build';
 var assets           = '/assets';
 var development      = './build/development';
-var production       = './build/production';
+var production       = './build/p';
 var node             = './node_modules/ert-webstyle';
 
 module.exports = {
