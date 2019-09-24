@@ -11,49 +11,7 @@ $es-path-to-assets: "../";
 
 // configuration
 //-------------------------------
-@import "../../node_modules/ert-webstyle/scss/configuration";
 
-
-// mixins and functions
-//-------------------------------
-@import "../../node_modules/ert-webstyle/scss/modules";
-
-//Webfonts
-//-------------------------------
-@import "../../node_modules/ert-webstyle/scss/foundation/webfonts";
-
-// Import styles for used elements
-//-------------------------------
-//-------------------------------
-// normalize.css v4 reset styles
-//-------------------------------
-// We have this file to assure compatibility with bootstrap.
-// you can remove it if you use bootstrap 3 or 4 along with ert-webstyles
-@import "../../node_modules/ert-webstyle/scss/vendor/normalize";
-@import "../../node_modules/ert-webstyle/scss/foundation/general";
-
-@import "../../node_modules/ert-webstyle/scss/foundation/typography";
-@import "../../node_modules/ert-webstyle/scss/foundation/content-box";
-@import "../../node_modules/ert-webstyle/scss/foundation/icon";
-@import "../../node_modules/ert-webstyle/scss/foundation/layouts/layouts";
-@import "../../node_modules/ert-webstyle/scss/foundation/layouts/layout-base";
-@import "../../node_modules/ert-webstyle/scss/foundation/layouts/layout-columns";
-
-@import "../../node_modules/ert-webstyle/scss/components/basics/button";
-@import "../../node_modules/ert-webstyle/scss/components/basics/dropdown";
-@import "../../node_modules/ert-webstyle/scss/components/containers/panel";
-@import "../../node_modules/ert-webstyle/scss/components/containers/toolbar";
-@import "../../node_modules/ert-webstyle/scss/components/form-controls/form-controls";
-@import "../../node_modules/ert-webstyle/scss/components/forms/form";
-@import "../../node_modules/ert-webstyle/scss/components/forms/form-field";
-@import "../../node_modules/ert-webstyle/scss/components/forms/form-message";
-@import "../../node_modules/ert-webstyle/scss/components/navigation/breadcrumbs";
-@import "../../node_modules/ert-webstyle/scss/components/navigation/sidebar";
-@import "../../node_modules/ert-webstyle/scss/components/indicators/wizard-steps";
-@import "../../node_modules/ert-webstyle/scss/components/global-header";
-
-@import "../../node_modules/ert-webstyle/scss/templates/app/app";
-@import "../../node_modules/ert-webstyle/scss/templates/app/page-header";
 
 
 //Custom Styles
@@ -61,19 +19,9 @@ $es-path-to-assets: "../";
 
 /* Page Layout */
 html {
-  min-height: 100%;
-  // By default all browsers use a 16px font size, so
-  // we re-calculate the default pixel size to a percentage for loss-less
-  // caluclation of later rem values 
-  font-size: es-percentage($es-pixel-unit, 16px); // => font size: 10 * 100 / 16 => 62.5%
-  box-sizing: border-box;
+
 }
 
 body {
-  background-color: $es-background-contrast-color;
-  color: $es-font-color;
-  font-size: es-to-rem($es-font-size-default);
-  font-family: $es-font-primary;
-  min-height: 100%;
-  line-height: es-to-rem($es-line-height);
+
 }

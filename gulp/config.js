@@ -4,6 +4,7 @@ var gutil  = require( 'gulp-util' );
 var app              = './app';
 
 var build            = './build';
+var assets           = '/assets';
 var development      = './build/development';
 var production       = './build/production';
 var node             = './node_modules/ert-webstyle';
@@ -18,7 +19,7 @@ module.exports = {
       files: [
         app + '/scss/**/*.scss',
         app + '/js/**/*.js',
-        app + '/img/**',
+        app + '/images/**',
         app + '/fonts/**'
       ]
     }
@@ -30,7 +31,7 @@ module.exports = {
     html: app + '/html/**/*.*',
     theme: app + '/theme/**/*.*',
     scripts: app + '/js/**/*.js',
-    images:  app + '/img/**/*',
+    images:  app + '/images/**/*',
     fonts:   app + '/fonts/**/*'
   },
   html: {
@@ -38,25 +39,25 @@ module.exports = {
     dest: development + '/'
   },
   images: {
-    src:  node + '/images/**/*',
-    dest: development + '/images'
+    src:  app + '/images/**/*',
+    dest: development + assets + '/images'
   },
   fonts: {
     development: {
-      src: node + '/fonts/**/*',
-      dest: development + '/fonts'
+      src: app + '/fonts/**/*',
+      dest: development + assets + '/fonts'
     }
   },
   scripts: {
     development: {
-      src:  node + '/js/**/*',
-      dest: development + '/js'
+      src:  app + '/js/**/*',
+      dest: development + assets + '/js'
     }
   },
   sass: {
     development: {
       src:  app + '/scss/**/*',
-      dest: development + '/css',
+      dest: development + assets + '/css',
       options: {
       }
     },
