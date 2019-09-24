@@ -5,8 +5,7 @@ var app              = './app';
 
 var build            = './build';
 var assets           = '/assets';
-var development      = './build/development';
-var production       = './build/p';
+var development      = './build';
 var node             = './node_modules/ert-webstyle';
 
 module.exports = {
@@ -63,7 +62,7 @@ module.exports = {
     },
     production: {
       src:  app + '/scss/**/*',
-      dest: production + '/css',
+      dest: build + assets + '/css',
       options: {
         sourceComments: false,
         outputStyle: 'compressed',

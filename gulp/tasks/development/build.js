@@ -8,6 +8,9 @@ var runSequence = require('run-sequence');
       'scripts:copy',
       'theme:copy',
  */
+
+
+ // add handlebars build
 gulp.task('build', function(callback) {
   runSequence(
     'delete',
@@ -18,6 +21,21 @@ gulp.task('build', function(callback) {
       'scripts:copy',
       'html:copy',
       'sass:build',
+    ],
+  callback);
+});
+
+// Add minification for images, css and scripts
+gulp.task('build:production', function(callback) {
+  runSequence(
+    'delete',
+    'mkdir',
+    [
+      'images:copy',
+      'fonts:copy',
+      'scripts:copy',
+      'html:copy',
+      'sass:build:production',
     ],
   callback);
 });
