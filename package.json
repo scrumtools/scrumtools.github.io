@@ -1,0 +1,29 @@
+{
+  "name": "SampleProject",
+  "version": "2.0.17+d20190823063153b399s1",
+  "description": "Sample Project: An example how to use the StyleGuide",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "3.9.1"
+  },
+  "devDependencies": {
+    "async": "^2.0.1",
+    "autoprefixer": "^6.4.0",
+    "browser-sync": "^2.16.0",
+    "ert-webstyle": "2.0.17+d20190823063153b399s1",
+    "del": "^2.2.2",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "3.1.1",
+    "gulp-changed": "^1.3.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.0",
+    "mkdirp": "^0.5.1",
+    "require-dir": "^0.3.0",
+    "run-sequence": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
