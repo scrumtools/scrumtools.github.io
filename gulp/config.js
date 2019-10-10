@@ -5,6 +5,7 @@ var app              = './app';
 
 var build            = './build';
 var assets           = '/assets';
+var hb               = '/hb';
 var development      = './build';
 var node             = './node_modules/ert-webstyle';
 
@@ -35,6 +36,14 @@ module.exports = {
   },
   html: {
     src:  app + '/html/**/*.*',
+    dest: development + '/'
+  },
+  handlebars: {
+    src: app + hb+ '/views/**/*.{hb,hbs,html,handlebars}',
+    srcPartials: [app + hb + '/partials/**/*.{hbs,js}'],
+    srcTheme: [app + hb + '/theme/**/*.{hbs,js}'],
+    srcUtils: [app + hb + '/utils/**/*.{hbs,js}'],
+    srcData: [app + hb + '/data/**/*.json' ],   
     dest: development + '/'
   },
   images: {

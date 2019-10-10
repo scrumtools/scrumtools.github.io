@@ -19,7 +19,8 @@ gulp.task('build', function(callback) {
       'images:copy',
       'fonts:copy',
       'scripts:copy',
-      'html:copy',
+      //'html:copy',
+      'handlebars:build',
       'sass:build',
     ],
   callback);
@@ -34,7 +35,8 @@ gulp.task('build:production', function(callback) {
       'images:copy',
       'fonts:copy',
       'scripts:copy',
-      'html:copy',
+      //'html:copy',
+      'handlebars:build',
       'sass:build:production',
     ],
   callback);

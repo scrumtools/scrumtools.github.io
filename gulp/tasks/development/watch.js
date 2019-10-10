@@ -9,5 +9,6 @@ gulp.task('watch', ['browsersync'], function() {
   gulp.watch(config.scripts, ['scripts:copy']);
   gulp.watch(config.images, ['images:copy']);
   gulp.watch(config.html, ['html:rebuild']);
+  gulp.watch(config.handlebars, ['handlebars:rebuild']);
   gulp.watch(config.fonts, ['fonts:copy']);
 });
