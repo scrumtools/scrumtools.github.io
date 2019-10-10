@@ -1,50 +1,8 @@
-<!DOCTYPE HTML>
-
-<html>
-	<head>
-		<title>Scrum Master Toolbox</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body>
-
-		<!-- Header -->
-			<header id="header" class="alt">
-				<div class="logo"><a href="index.html">Scrum <span>Toolbox</span></a></div>
-				<a href="#menu">Menü</a>
-			</header>
+{{> page/header }}
 
 		<!-- Nav -->
-		<nav id="menu">
-			<ul class="links">
-				<li><a href="index.html">Startseite</a></li>
-				<li><a href="allgemeines.html">Allgemeines</a></li>
-				<ul class="links">
-					<li><a href="moderationstechniken.html" >Moderationstechniken</a></li>
-					<li><a href="meetingmanagement.html" >Meetingmanagement</a></li>
-					<li><a href="teamentwicklung.html" >Teamentwicklung</a></li>
-					<li><a href="gamification.html" >Gamification</a></li>
-					<li><a href="konfliktmanagement.html" >Konfliktmanagement</a></li>
-					<li><a href="metriken.html" >Metriken und Visualisierung</a></li>
-				</ul>
-				<li><a href="retro.html">Retrospektive</a></li>
-				<ul class="links">
-						<li><a href="intro.html" >Intro</a></li>
-						<li><a href="datensammeln.html" >Daten sammeln</a></li>
-						<li><a href="einsichtengewinnen.html" >Einsichten gewinnen</a></li>
-						<li><a href="massnahmenbeschliessen.html" >Maßnahmen beschließen</a></li>
-						<li><a href="abschluss.html" >Abschluss</a></li>
-					</ul>
-				<li><a href="sprintevents.html">Sprintevents</a></li>
-				<ul class="links">
-						<li><a href="daily.html" >Daily</a></li>
-						<li><a href="sprintplanning.html" >Sprint Planning</a></li>
-						<li><a href="sprintreview.html" >Sprint Review</a></li>
-						<li><a href="refinement.html" >Refinement</a></li>
-					</ul>
-			</ul>
-		</nav>
+		{{> page/navigation/sidebar }}
+
 
 		<!-- Banner -->
 			<section id="banner">
@@ -116,27 +74,4 @@
 
 			</div>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="copyright">
-					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-xing"><span class="label">Snapchat</span></a></li>
-					</ul>
-					<p>&copy; Scrum Toolbox. All rights reserved. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.</p>
-					<p><a href="impressum.html" class="sc-impressum">Impressum</a></p>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+{{> page/footer }}

@@ -1,0 +1,24 @@
+{{#if is-link }}
+  <a {{no-href}} class="es-button {{modifiers}}">
+      {{#if icon}}
+              <span class="es-icon {{icon}}"></span><span>{{text}}</span>
+      {{else}}
+              {{text}}
+      {{/if}}
+  </a>
+{{else}}   
+    <button id="{{id}}" class="{{#if bare-icon}}es-icon {{bare-icon}} {{modifiers}}{{else}}
+    es-button {{#if primary}} -es-primary{{/if}}{{#if small}}-es-small{{/if}} {{modifiers}}{{/if}}"{{#if modal}} data-dismiss="modal"{{/if}}
+    {{#if disabled}} disabled=""{{/if}}>
+    
+        {{#if icon}}
+            <span class="es-icon {{icon}}"></span><span>{{text}}</span>
+        {{else}}
+                {{#if icon-right}}
+                    <span>{{text}}</span><span class="es-icon {{icon-right}}"></span>
+                {{else}}
+                    {{text}}
+                {{/if}}
+        {{/if}}
+    </button>
+{{/if }}
