@@ -56,20 +56,60 @@
 								<h1>Metriken</h1>
 								<p> </p>
 							</header>
-							<div class="flex flex-2">
-								<div class="col col2">
-									<h3></h3>
-									<p></p>
-									<p></p>
-								</div>
-								<div class="col col1 first">
-									<div class="image round fit">
-										<a href="generic.html" class="link"><img src="images/pic02.jpg" alt="" /></a>
-									</div>
-								</div>
-							</div>
-							<p>Wir wollen dir durch diese Website die Möglichkeit bieten, Methoden für alle Fälle an einem Ort gesammelt zu haben. Wir verstehen diese Seite als einen immer wachsenden Wissensfundus, der durch seine Besucher lebt. Denn natürlich haben wir einige Methoden, die wir gerne verwenden und welche wir selbst erprobt haben. Jedoch wollen wir uns nicht anmaßen, alle Methoden selbst zu kennen. Und um einen immer weiter wachsende Bibiothek zu garantieren, brauchen wir deine Hilfe! Hast du eine Methode, die du gerne einsetzt? Dann sende sie uns zu! Egal ob abfotografiert, als Link, als ausformulierter Text: Wir freuen uns über alles und werden es (wenn es von dir gewünscht wird) unter deinem Namen veröffentlichen. Natürlich kannst du aber auch Anonym bleiben. Wir sind da agil ...  </p>
-							<p> Schreibe einfach eine Mail an <a href="mailto:mail@scrumtoolbox.de">mail@scrumtoolbox.de</a> und wir werden uns im nächsten Sprint darum kümmern. </p>
+					<!--Content-->
+							<p>Die Aufgabe des Scrum Masters ist es eine Reihe von Kennzahlen, Statisken und Metriken zu erfassen. Mit diesen kann er rechtzeitig Probleme / Impediments im Team erkennen und diese angehen. Auch hat der Scrum Master mit den Metriken die Möglichkeit Missstände mit Daten zu hinterlegen, wenn er diese an das Management weiterleitet.
+							</p>
+							<p>Hier ist eine kleine Auswahl an Metriken (welche wir noch erweitern werden):
+							</p>
+							<h3 id="scrumadherence">1) Scrum Adherence</h3>
+							<p>Mit einem Fragen oder einer Checklist kann man die Scrum Adherence von Teams messen.
+								Teilweise wird das Befolgen der Regel auch feiner abgestuft, um  qualitative Aussagen treffen zu können. Den Rahmen für die Messung und die Bewertungsgrundlage bilden dabei der von Ken Schwaber und Jeff Sutherland verfasste und stetig weiter entwickelte Scrum Guide, der die Grundlagen von Scrum – mit den Rollen, Events und Artefakte sowie ihr Zusammenspiel – beschreibt.
+								</p>
+							<p>Tests zum Erfassen der Scrum Adherence gibt es einige. Der erste bekannte Vertreter war der sogenannte "Nokia Test". Er besteht aus ein paar Fragen, die Bas Vodde bei Nokia Siemens Networks Scrum-Teams stellte. Bekannt wurde der Test in der Version von Sutherland, der ihn als "ScrumButt Test" um eine Bewertungsskala für die einzelnen Fragen erweitert hat. In ihm werden Fragen zu den folgenden Themengebieten gestellt:
+							</p>
+						<ol>
+							<li>Iterationen</li>
+							<li>Testing</li>
+							<li>Spezifikationen</li>
+							<li>Product Owner</li>
+							<li>Product Backlog</li>
+							<li>Schätzungen</li>
+							<li>Burndown</li>
+							<li>Disruption</li>
+							<li>Team</li>
+						</ol>
+							<p>Ein weiterer Test, inhaltlich näher am aktuellen Scrum Guide, ist der Scrum Adherence Index von Francesco Lomonaco und Christian Lapointe. Auch hier werden Fragen zur Einhaltung der Scrum-Regeln gestellt, der Test ist jedoch umfangreicher und damit aussagekräftiger als der relativ einfache ScrumButt Test. Geprüft werden jeweils mehrere Fragen zu den folgenden Themen:
+							</p>
+						<ol>
+							<li>Events</li>
+							<li>Sprint</li>
+							<li>Daily</li>
+							<li>Sprint Planning</li>
+							<li>Sprint Review</li>
+							<li>Sprint Retrotrospective</li>
+							<li>Backlog Refinement</li>
+							<li>Rollen</li>
+							<li>Product Owner</li>
+							<li>Development Team</li>
+							<li>Scrum Master</li>
+							<li>Artefakte</li>
+							<li>Product Backlog</li>
+							<li>Sprint Backlog</li>
+							<li>Increment</li>
+							<li>Definition of Done</li>
+						</ol>
+
+						<p>Allen Tests gemein ist, dass es sich um mehr oder weniger einfache Checklisten handelt, die das Scrum-Team ausfüllen muss. Häufig werden sie an markanten Punkten während einer Entwicklung durchgeführt, um zu prüfen, ob ein Team in der eigenen Scrum-Implementierung noch nach den Regeln spielt oder nicht – zum Beispiel beim Wechsel in ein neues Release oder bei übergeordneten Audits zur Bewertung des Vorgehens.</p>
+						<p>Die Scrum Adherence erfasst häufig das Team selbst, manchmal auch externe Scrum-Coaches, obwohl die ausschließliche Betrachtung von außen mehr als fragwürdig ist. Die Zielgruppen können vielfältig sein. Vom Team, das wissen möchte, in welchen Bereichen es sein eigenes Scrum noch verbessern kann, bis hin zu außenstehenden Stakeholdern, die wissen möchten, wie Scrum innerhalb eines Teams, einer Gruppe von Teams oder der gesamten Organisation gelebt wird.</p>
+						<p>Abschließend lässt sich sagen, dass die Messung der Scrum Adherence ein einfaches und kostengünstiges Werkzeug ist, um die eigene Implementierung von Scrum zu überprüfen. Mit ihr lassen sich die Bereiche in der Teamarbeit aufzeigen, die sich – mit Blickrichtung auf das Framework – noch verbessern lassen. Sie sollte jedoch nicht überbewertet werden. Die Diskussionen innerhalb eines Teams, die sich aus der Beschäftigung mit seinen Inhalten – etwa im Rahmen einer Retrospektive – ergeben, sind aus Sicht der Autoren wertvoller als die erreichte Punktzahl.</p>
+						<p>(Siehe Heise Agile Meriken Mythos oder Wahrheit)</p>
+						
+						<h3 id="velocity">2) Velocity</h3>
+						<p>Die Velocity wird berechnet als Durchschnitt der abgeschlossenen Stories in den letzten drei Sprints in Story Points. Sie wird verwendet um eine Schätzung abgeben zu können, wie groß der Sprint Backlog im Sprint Planning gefüllt werden kann. Um die Krankheiten, Urlaube und andere Einflüsse mit einzuberechnen, kann die Velocity normalisiert werden.
+						</p>
+						<h3 id="burndownchart">3) Burndown Chart</h3>
+						<p>Der Burndown Chart wird während des Sprints verwendet um die verbleibende Menge an Arbeit des Sprint Backlogs in einem Sprint zu visualisieren. So werden mögliche Blocker aufgezeigt und das Team kann rechtzeitig reagieren. Der Burndown Chart sollte möglichst jeden Tag im Daily angeschaut werden.
+						</p>
 						</div>
 					</section>
 			</div>
